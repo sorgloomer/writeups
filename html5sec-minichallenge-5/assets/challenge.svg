@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="317.5mm" height="161.925mm"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<desc>Created by HiQPdf</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="36" font-family="Times New Roman" font-size="11" font-weight="700" font-style="normal" 
+ >A challenge by Masato, FD and .mario</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="92" font-family="Times New Roman" font-size="32" font-weight="700" font-style="normal" 
+ >The XSS Metaphor</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="136" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Is it real? </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="156" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Can it be? </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="176" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >What is the meaning of life? </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="196" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Can you execute </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="113" y="196" font-family="Courier New" font-size="13" font-weight="400" font-style="normal" 
+ >alert(1)</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="177" y="196" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ > in this origin? </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="216" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Is the vulnerable parameter called </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="214" y="216" font-family="Courier New" font-size="13" font-weight="400" font-style="normal" 
+ >xss</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="238" y="216" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >? </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="236" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Does it matter?</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="272" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >In scope are recent Chrome, Edge and Firefox browsers. </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="292" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >There is more than one expected solution. One easy, one hard. Experts will find both. User interaction is not required.</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="338" font-family="Times New Roman" font-size="24" font-weight="700" font-style="normal" 
+ >Winners</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27" y="379" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >1</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35" y="379" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >. </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="48" y="379" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Gábor Molnár, who found both possible solutions (confirmed on 18th of April 2016, 2pm)</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27" y="399" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >2</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35" y="399" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >. </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="48" y="399" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >A gentleman going by the name </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="239" y="399" font-family="Times New Roman" font-size="16" font-weight="400" font-style="italic" 
+ >phiber</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="280" y="399" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >, one of two solutions (confirmed on 20th of April 2016, 4pm)</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27" y="419" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >3</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35" y="419" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >. </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="48" y="419" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >David Júlio, who found one of two solutions (confirmed on 21st of April 2016, 11am)</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27" y="439" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >4</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35" y="439" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >. </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="48" y="439" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Tamás Hegedűs with an incredible and complex </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="338" y="439" font-family="Times New Roman" font-size="16" font-weight="700" font-style="normal" 
+ >unexpected</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="414" y="439" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ > solution, wow! (confirmed on 23rd of April, 9pm)</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27" y="459" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >5</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35" y="459" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >. </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="48" y="459" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Pepe Vila &amp; aerøx, who found two solutions, one being unexpected! (confirmed on 25th of April 2016, 2pm)</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27" y="479" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >6</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35" y="479" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >. </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="48" y="479" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Michał Bentkowski with two solutions, one of them completely unexpected! (confirmed on 26th of April 2016, 10am)</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27" y="499" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >7</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35" y="499" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >. </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="48" y="499" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Simon Lindholm, with one expected and one unexpected solution :D (confirmed on 26th of April 2016, 10am)</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27" y="519" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >8</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35" y="519" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >. </text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="48" y="519" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >You?</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="555" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Mail </text>
+</g>
+
+<g fill="#0000ee" fill-opacity="1" stroke="#0000ee" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#0000ee" fill-opacity="1" stroke="none" xml:space="preserve" x="39" y="555" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >.mario</text>
+</g>
+
+<g fill="#0000ee" fill-opacity="1" stroke="#0000ee" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+>
+<polyline fill="none" vector-effect="none" points="39,556.5 76,556.5 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="77" y="555" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ > or </text>
+</g>
+
+<g fill="#0000ee" fill-opacity="1" stroke="#0000ee" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#0000ee" fill-opacity="1" stroke="none" xml:space="preserve" x="98" y="555" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >FD</text>
+</g>
+
+<g fill="#0000ee" fill-opacity="1" stroke="#0000ee" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+>
+<polyline fill="none" vector-effect="none" points="98,556.5 117,556.5 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="118" y="555" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ > or </text>
+</g>
+
+<g fill="#0000ee" fill-opacity="1" stroke="#0000ee" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#0000ee" fill-opacity="1" stroke="none" xml:space="preserve" x="139" y="555" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Masato</text>
+</g>
+
+<g fill="#0000ee" fill-opacity="1" stroke="#0000ee" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+>
+<polyline fill="none" vector-effect="none" points="139,556.5 184,556.5 " />
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="185" y="555" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ > if you did it :)</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="8" y="591" font-family="Times New Roman" font-size="16" font-weight="400" font-style="normal" 
+ >Thanks, Raphaël for spotting a reporting a bug prior to publication of the challenge.</text>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+>
+</g>
+
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1,0,0,1,0,0)"
+>
+</g>
+</g>
+</svg>

