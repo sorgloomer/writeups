@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XSS minichallenge 5</title>
+  <link rel="stylesheet" href="../lib/reveal/css/reveal.css">
+  <link rel="stylesheet" href="../lib/reveal/css/theme/black.css">
+  <script src="../lib/head/head.min.js"></script>
+  <style>
+    .url-part {
+      text-align: left;
+    }
+    .reveal .screenshot {
+      background-color: white;
+    }
+    .reveal ul code {
+      font-size: 50%;
+      vertical-align: middle;
+    }
+    .reveal code {
+      padding: 3px;
+      border: 1px solid #686868;
+      background-color: #383838;
+    }
+    .reveal footer {
+      margin-top: 40px;
+      text-align: right;
+      font-size: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+    <section>
+      <h2>WebAssembly in 2016</h2>
+      <a href="https://github.com/webassembly/">https://github.com/webassembly/</a>
+    </section>
+
+    <section>
+      <h3>What is WebAssembly?</h3>
+      <p>A <strong>new standard</strong> being developed in a W3C Community Group with Apple,
+        Google, Microsoft and Mozilla which defines:</p>
+      <ol>
+        <li>
+          a compact, portable <strong>binary format</strong> which is fast to load
+          and runs <strong>safely</strong> at predictably near-native speed
+        </li>
+        <li>
+          a 1:1 text format rendered by developer tools when viewing source
+        </li>
+      </ol>
+      <footer>Luke Wagner &ndash; WebAssembly: a new compiler target for the web</footer>
+    </section>
+
+    <section>
+      <h3>Why WebAssembly?</h3>
+      <ul>
+        <li>Image/Video processing/editing</li>
+        <li>Compression, encryption</li>
+        <li>VR and low latency</li>
+        <li>WebUsb</li>
+        <li>Scientific simulation</li>
+        <li>Platform simulation (QEMU, DOSBox, ...)</li>
+        <li>Games</li>
+        <li>Remote desktop, VPN</li>
+        <li>Existing cpp codebase</li>
+        <li>... any cpu-bound code</li>
+      </ul>
+      <footer>Ben Smith &ndash; WebAssembly: birth of a virtual ISA</footer>
+    </section>
+
+    <section>
+      <h3>FAQ</h3>
+      <ul>
+        <li>Will Wasm replace JS?</li>
+        <li class="fragment">No.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Wasm binary</h3>
+      <p>Is just a postorder serialization of an AST. They claim its better than Java bytecode.</p>
+    </section>
+
+    <section>
+      <h3>WebAssembly features</h3>
+      <ul>
+        <li>No builtin objects, allocator</li>
+        <li>No GC</li>
+        <li>Linear memory</li>
+        <li>Just like asm.js</li>
+        <li>Only 32bit for now :(</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>I want to try it!</h3>
+      <p>Great! Firefox and Chrome has Wasm support under flags. For the
+      compiler follow the <a href="http://webassembly.org/stepbystep/">step by step.</a></p>
+    </section>
+
+    <section>
+      <h3>VM Safety</h3>
+      <p>Callstack and machine code is <strong>not in address space</strong>.</p>
+      <p>The only dangerous opcodes are <code>.load</code> and <code>.store</code>
+        operations, as they index into memory. They employ a cool trick in 64bit
+        machines: mmap 4GBs of continouos virtual memory, you can't over-index
+        that with an i32 address. Runtime bound-checks on 32bits.</p>
+    </section>
+
+    <section>
+      <h3>Target Wasm</h3>
+      <ul>
+        <li>Use emscripten</li>
+        <li><code>emcc -s BINARYEN=1 -s 'EXPORTED_FUNCTIONS=["_fib"]' fib.c -o fib.js</code></li>
+        <li>an llvm backend</li>
+        <li>produces asm.js</li>
+        <li>binaryen converts asm.js to webassembly</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>asm.js example</h3>
+      <pre><code>function module(global, env, buffer) {
+  "use asm";
+  ...
+  function fib(n) {
+    n = n|0;
+    var a = 0, b = 1, t = 0;
+    while ((n|0) >= 0) {
+      t = b;
+      b = (a + b)|0;
+      a = t;
+      n = (n - 1)|0;
+    }
+    return b|0;
+  }
+  return {fib: fib};
+}</code></pre>
+
+    </section>
+
+    <section>
+      <h3>References</h3>
+      <ul>
+        <li>Ben Smith &ndash; WebAssembly: birth of a virtual ISA</li>
+        <li>Luke Wagner &ndash; WebAssembly: a new compiler target for the web</li>
+
+        <li><a href="http://webassembly.org/stepbystep/">Step by step portable</a></li>
+        <li><a href="https://github.com/kripken/emscripten/wiki/WebAssembly">Targeting wasm</a></li>
+        <li><a href="http://kripken.github.io/emscripten-site/docs/building_from_source/building_emscripten_from_source_on_linux.html#building-emscripten-on-linux">building emscripten on linux</a></li>
+      </ul>
+    </section>
+
+  </div>
+</div>
+
+<script src="../lib/reveal/js/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    transition: "convex",
+    history: true,
+    dependencies: [
+      { src: 'lib/reveal/plugin/zoom-js/zoom.js', async: true }
+    ]
+  });
+</script>
+
+</body>
+</html>
