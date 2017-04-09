@@ -229,7 +229,12 @@ first_name=aa%1F%B2%E1%BE%B7%E1%BE%B7%E1%BE%B7%E1%BE%B7%E1%BE%B7&last_name=admin
 # 13. jwt bypass
 http://139.59.112.116/dddace4a-d619-4204-bb15-df6c0a24d6de/
 
-https://github.com/jwt/ruby-jwt
+<details>
+<summary>Hint</summary>
+<p>
+They use this lib: https://github.com/jwt/ruby-jwt
+</p>
+</solution>
 
 <details>
 <summary>Solution</summary>
@@ -280,10 +285,8 @@ http://139.59.127.148/ed932765-1a3a-467a-be5b-e11dc1fc542d/
 </p>
 </solution>
 
-# 16. captcha
+# 16. captcha madness with no repeating chars
 http://188.166.183.58/96e5c0bd-7f33-4188-94f0-89b3094bd6af/
-
-captcha madness with no repeating chars
 
 <details>
 <summary>Authors solution</summary>
