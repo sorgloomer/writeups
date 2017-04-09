@@ -296,7 +296,7 @@ http://139.59.127.149/e3cb1461-411d-4281-9c62-80b3c5e83cc9/captcha.php?id=q%27+u
 </details>
 
 
-# 17. echo service
+# 17. echo service 1
 http://139.59.127.150/1d0f2acf-a96b-4e9c-a70a-92ba42f70bc2/
 
 <details>
@@ -322,3 +322,8 @@ http://139.59.127.150/1d0f2acf-a96b-4e9c-a70a-92ba42f70bc2/?name=%3C!--%23set%20
 
 </p>
 </details>
+
+# 18. echo service 2
+http://139.59.127.62/295dddc1-013d-41a9-8ddd-b6326acb8dc1/
+
+Somebody claimed the prize at this point, I did not continue.
