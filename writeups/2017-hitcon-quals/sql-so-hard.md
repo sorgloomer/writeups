@@ -26,7 +26,7 @@ Our final exploit payload for the `username` field is:
 - start digging into `node pg`-s query parser
 - learn that the field names are not parsed on the client side but are reflected from the server
 - consult the PostgreSQL documentation
-- find interesting [unicode quoted identifiers](https://www.postgresql.org/docs/9.5/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS)
+- find interesting [unicode quoted identifiers](https://www.postgresql.org/docs/9.5/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS) `U&"!005c'" UESCAPE '!'`
 - assemble query from `returning` clause, tabs and the above literals
 - celebrate the RCE
 - find out that `require` is not defined in `Function("require")()` calls in node modules
