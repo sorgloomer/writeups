@@ -79,8 +79,8 @@ At the end we put a shellcode to read `/etc/passwd` to find a user called `subtr
 
 Enjoy your flag: `flag{pr1n7f_15_600d_47_51mpl3_m47h}`
 
-Commands without the shellcode at the end
------------------------------------------
+Solution source
+---------------
 
 ```python3
 import sys
