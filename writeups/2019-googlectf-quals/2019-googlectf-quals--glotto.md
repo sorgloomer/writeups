@@ -3,7 +3,7 @@
 
 https://glotto.web.ctfcompetition.com/
 
-Writeup by Tamás Hegedűs -- !SpamAndHex
+Writeup by Tamás Hegedűs - !SpamAndHex
 
 
 ## TL;DR
@@ -27,7 +27,7 @@ expression
 where `$order` is a user-controlled variable, and the whole query is evaluated once for each of the four table. Even the
 secret ticket was neatly put on the db session in a variable by `$db->query("SET @lotto = '$winner'");`. At this point
 my friend @kt casually told me "oh I solved a very similar challenge on BitcoinCTF in 2014", and pointed me to a
-presentation about [leaking information via an `order by` injection using rand()](https://github.com/lukejahnke/talks/blob/master/Harder%20Better%20Faster%20Stronger%20-%20Ruxcon%202011.pdf)
+presentation about [leaking information via an `order by` injection using rand](https://github.com/lukejahnke/talks/blob/master/Harder%20Better%20Faster%20Stronger%20-%20Ruxcon%202011.pdf)
 It uses the fact that MySQL will initialize a deterministic pseudo-random generator with the given seed, and then take
 the next pseudo-random value every time the expression is evaluated, and fortunately in the case of `order by` the
 expression is evaluated once per row, in the order of the rows being read from the disk. So it is possible to put a
@@ -317,7 +317,7 @@ a right answer per every `2000` attempts.
 In the above logic we fed just as many bits into our random permutation as we wanted to get out. But in reality nothing
 prevents us from feeding much more bits into it, making it leaking more and more bits, increasing our efficiency! In
 fact, we could even feed the whole token into the `rand` as seed for each table, and then correlate all four tables to
-get a set of possible tokens resulting in these four permutations. I did not think much about it but this seems to
-require enormus lookup tables, but in theory we should be able to get close to a leak of all possible `50.65` bits. It
-is also sensitive to the implementation of `rand()`, an algorithm with a small internal state of `32` bits would ruin
-the exploit.
+get a set of possible tokens resulting in these four permutations. I did not think much about it, this seems to require
+enormus lookup tables, but in theory we should be able to get close to a leak of all possible `50.65` bits. It is also
+sensitive to the implementation of `rand()`, an algorithm with a small internal state of `32` bits would ruin the
+exploit.
